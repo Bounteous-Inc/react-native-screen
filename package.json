@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/%3AHS2-SOLUTIONS/react-native-screen/issues"
   },
-  "homepage": "https://github.com/%3AHS2-SOLUTIONS/react-native-screen#readme"
+  "homepage": "https://github.com/%3AHS2-SOLUTIONS/react-native-screen#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-native": "^0.39.1"
+  }
 }
