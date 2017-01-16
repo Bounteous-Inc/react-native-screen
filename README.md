@@ -20,10 +20,12 @@ Currently, You should explicitly pass `{...this.props}` into every on of your TS
 ### Examples
 
 ```javascript
-	<Screen
-		{...this.props} // Get all of the props from NavContainer
-		tabbar={'both'}   // Tabs are on top and bottom, so we must account for that on our render 
-		paddingHorizontal={20}> // Set a padding of 20pts on each side
-		<Text>Hello World</Text>
-	</Screen> 
+  import Screen from 'react-native-screen';
+
+  <Screen
+    {...this.props}
+    tabbar={'both'}   // Tabs are on top and bottom, so we must account for that on our render 
+    paddingHorizontal={20}> // Set a padding of 20pts on each side
+    <Text>My really cool Mobile Screen!</Text>
+  </Screen> 
 ```

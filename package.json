@@ -7,6 +7,15 @@
     "test": "jest",
     "test:watch": "jest -- --watch"
   },
+  "jest": {
+    "preset": "react-native"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react-native"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/%3AHS2-SOLUTIONS/react-native-screen.git"
@@ -27,8 +36,5 @@
     "jest": "18.1.0",
     "jest-react-native": "18.0.0",
     "react-test-renderer": "~15.4.0-rc.4"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }

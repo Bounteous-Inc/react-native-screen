@@ -4,7 +4,6 @@
 'use strict';
 import React, {Component, PropTypes} from 'react';
 import {Platform, Dimensions, View, StyleSheet, ScrollView, Image, Text, TouchableWithoutFeedback} from 'react-native';
-import TapOut from './TapOut';
 
 const DEFAULT_STATUS_BAR_HEIGHT = (Platform.OS === 'ios') ? 20 : 0;
 const DEFAULT_NAVBAR_HEIGHT = (Platform.OS === 'ios') ? 44 : 54;
