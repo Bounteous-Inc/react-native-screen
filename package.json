@@ -2,10 +2,13 @@
   "name": "react-native-screen",
   "version": "0.0.1",
   "description": "A simple React Native component to assist creating a space where there may be tabs or navbar.",
-  "main": "index.js",
+  "main": "src/Screen.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest -- --watch"
+    "test": "npm run test:ios && npm run test:android",
+    "test:ios:watch": "jest -c jest.ios.json --watch",
+    "test:ios": "jest -c jest.ios.json --coverage || true",
+    "test:android:watch": "jest -c jest.android.json --watch",
+    "test:android": "jest -c jest.android.json --coverage || true"
   },
   "jest": {
     "preset": "react-native"
@@ -26,8 +29,6 @@
     "url": "https://github.com/HS2-SOLUTIONS/react-native-screen/issues"
   },
   "homepage": "https://github.com/HS2-SOLUTIONS/react-native-screen#readme",
-  "dependencies": {
-  },
   "devDependencies": {
     "react": "^15.4.2",
     "react-native": "^0.39.1",
@@ -35,6 +36,6 @@
     "babel-preset-react-native": "1.9.1",
     "jest": "18.1.0",
     "jest-react-native": "18.0.0",
-    "react-test-renderer": "~15.4.0-rc.4"
+    "react-test-renderer": "~15.4.2"
   }
 }

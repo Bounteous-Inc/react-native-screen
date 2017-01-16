@@ -11,7 +11,7 @@ const STATUS_BAR_HEIGHT = (Platform.OS === 'ios') ? 20 : 0;
 const NAVBAR_HEIGHT = (Platform.OS === 'ios') ? 44 : 54;
 const OFFSET = STATUS_BAR_HEIGHT + NAVBAR_HEIGHT;
 
-class Screen extends Component {
+export default class Screen extends Component {
   static propTypes = {
     backgroundImage: PropTypes.number,
     backgroundColor: PropTypes.string,
@@ -32,6 +32,7 @@ class Screen extends Component {
 
   constructor(props) {
     super(props);
+    console.log(Platform.OS);
   }
 
   /**
@@ -54,7 +55,7 @@ class Screen extends Component {
 
   _screenStyles() {
     let marginTop = 0;
-    let marginBottom = (this.props.tabbar === 'bottom' || this.props.tabbar === 'both' ? this.props.bottomTabHeight : 0);
+    let marginBottom = ['bottom', 'both'].includes(this.props.tabbar) ? this.props.bottomTabHeight : 0;
 
     return {
       backgroundColor: this.props.backgroundImage ? 'transparent' : this.props.backgroundColor || '#FFF',
@@ -114,8 +115,6 @@ class Screen extends Component {
     return view;
   }
 }
-
-export default Screen;
 
 let styles = StyleSheet.create({
   screen: {
