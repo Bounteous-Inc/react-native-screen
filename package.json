@@ -4,7 +4,8 @@
   "description": "A simple React Native component to assist creating a space where there may be tabs or navbar.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest -- --watch"
   },
   "repository": {
     "type": "git",
@@ -13,11 +14,21 @@
   "author": "Miguel Caballero",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/%3AHS2-SOLUTIONS/react-native-screen/issues"
+    "url": "https://github.com/HS2-SOLUTIONS/react-native-screen/issues"
   },
-  "homepage": "https://github.com/%3AHS2-SOLUTIONS/react-native-screen#readme",
+  "homepage": "https://github.com/HS2-SOLUTIONS/react-native-screen#readme",
   "dependencies": {
+  },
+  "devDependencies": {
     "react": "^15.4.2",
-    "react-native": "^0.39.1"
+    "react-native": "^0.39.1",
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.1.0",
+    "jest-react-native": "18.0.0",
+    "react-test-renderer": "~15.4.0-rc.4"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
