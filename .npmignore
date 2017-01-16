@@ -3,3 +3,4 @@ util/
 *.spec.js
 *.js.snap
 *.html
+coverage/
