@@ -32,7 +32,6 @@ export default class Screen extends Component {
 
   constructor(props) {
     super(props);
-    console.log(Platform.OS);
   }
 
   /**
