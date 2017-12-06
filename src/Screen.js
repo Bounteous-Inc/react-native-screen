@@ -2,7 +2,8 @@
  * Author: Miguel Caballero
  */
 'use strict';
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {Platform, Dimensions, View, StyleSheet, ScrollView, Image, Text, TouchableWithoutFeedback} from 'react-native';
 
 const DEFAULT_STATUS_BAR_HEIGHT = (Platform.OS === 'ios') ? 20 : 0;
